@@ -1,6 +1,9 @@
 <?php
     include 'database.php';
 
-    signIn('f', 'password');
-    // signUp('nickname', 'username', 'password');
+    $nickname = $_POST['nickname'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    signUp($nickname, $username, $password);
 ?>
